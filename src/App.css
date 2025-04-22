@@ -1,50 +1,98 @@
 #root {
   max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+
   text-align: center;
+  background-color: #e3f2fd;
 }
 
-.envoltura {
-  display: inline;
+.cabecera {
+  background-color: #1e88e5;
+  color: white;
+  padding: 3px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 15px;
+  display: flex;
+  justify-content: space-around;
 }
 
-.envoltura > div {
+.pie {
+  background-color: #1e88e5;
+  color: white;
+  padding: 10px;
+  margin-top: 20px;
+
+}
+
+.contenedorEmpleados {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.empleado {
+  background: white;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  text-align: left;
+}
+
+.empleado p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.calculadora {
+  margin-top: 25px;
+  padding: 5px 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   display: inline-block;
 }
 
+.calculadora input {
+  display: block;
+  margin: 10px auto;
+  padding: 7px;
+  width: 80%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.botones button {
+  margin: 6px;
+  padding: 5px 8px;
+  border: none;
+  border-radius: 4px;
+  background-color: #1e88e5;
+  color: white;
+  cursor: pointer;
+}
+
+.botones button:hover {
+  background-color: #1565c0;
+}
 .logo {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  animation: logo 2s infinite;
 }
 
-@keyframes logo-spin {
+@keyframes logo {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }
